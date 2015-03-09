@@ -22,13 +22,13 @@ this["JST"]["profile"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"
     + escapeExpression(((helper = (helper = helpers.company || (depth0 != null ? depth0.company : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"company","hash":{},"data":data}) : helper)))
     + "</li>\n    <li class=\"email\"><span class=\"octicon octicon-mail\"></span><a href=\"mailto:J5Beck@users.noreply.github.com\">&nbsp J5Beck@users.noreply.github.com</a></li>\n    <li><span class=\"octicon octicon-clock\"></span>&nbsp "
     + escapeExpression(((helper = (helper = helpers.created_at || (depth0 != null ? depth0.created_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"created_at","hash":{},"data":data}) : helper)))
-    + "</li>\n  </ul>\n  <div class=\"stats\">\n    <ul class=\"followers\">\n      <li class=\"follow-num\"></li>\n      <li>"
+    + "</li>\n  </ul>\n  <div class=\"stats\">\n    <ul class=\"followers\">\n      <li>"
     + escapeExpression(((helper = (helper = helpers.followers || (depth0 != null ? depth0.followers : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"followers","hash":{},"data":data}) : helper)))
-    + "</li>\n    </ul>\n    <ul class=\"starred\"> \n      <li class=\"star-num\"></li>\n      <li>"
+    + "</li>\n      <li class=\"follow-num\">Followers</li>\n    </ul>\n    <ul class=\"starred\"> \n      <li>"
     + escapeExpression(((helper = (helper = helpers.stars || (depth0 != null ? depth0.stars : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"stars","hash":{},"data":data}) : helper)))
-    + "</li>\n    </ul>\n    <ul class=\"following\"> \n      <li class=\"following-num\"></li>\n      <li>"
+    + "</li>\n      <li class=\"star-num\">Starred</li>\n    </ul>\n    <ul class=\"following\"> \n      <li>"
     + escapeExpression(((helper = (helper = helpers.following || (depth0 != null ? depth0.following : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"following","hash":{},"data":data}) : helper)))
-    + "</li>\n    </ul>\n  </div>\n</div>\n";
+    + "</li>\n      <li class=\"following-num\">Following</li>\n    </ul>\n  </div>\n</div>\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["repo"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -43,13 +43,13 @@ this["JST"]["repolist"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],
     + escapeExpression(((helper = (helper = helpers.forks_count || (depth0 != null ? depth0.forks_count : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"forks_count","hash":{},"data":data}) : helper)))
     + "</span>\n    <span class=\"code-type\">"
     + escapeExpression(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"language","hash":{},"data":data}) : helper)))
-    + "</span>\n  </div>\n  <span class=\"repo-name\">"
+    + "</span>\n  </div>\n    <h3 class=\"repo-name\">"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
-    + "</span>\n  <span class=\"repo-desc\">"
+    + "</h3>\n    <ul>\n      <li class=\"repo-desc\">"
     + escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"description","hash":{},"data":data}) : helper)))
-    + "</span>\n  <span class=\"repo-stats\">Updated "
+    + "</li>\n      <li class=\"repo-stats\">Updated "
     + escapeExpression(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"updated_at","hash":{},"data":data}) : helper)))
-    + "</span>\n</div>\n\n";
+    + "</li>\n    </ul>  \n</div>\n\n";
 },"useData":true});
 this["JST"] = this["JST"] || {};
 this["JST"]["starred"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
