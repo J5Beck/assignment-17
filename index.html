@@ -28,12 +28,23 @@
             <a href="#">Blog</a>
             <a href="#">Help</a>
           </div>
-      </div>  
+      </div>
+      <ul class="head-right">
+        <li>
+          <img class="head_right_avatar" src="images/jbeckavatar.jpeg">
           <span class="octicon octicon-inbox"></span>
+        </li>
+        <li>
           <span class="octicon octicon-plus"></span>
           <span class="octicon octicon-triangle-down"></span>
+        </li>
+        <li>
           <span class="octicon octicon-sign-out"></span>
+        </li>
+        <li>
           <span class="octicon octicon-gear"></span>
+        </li>
+      </ul>  
       </header><!-- header end -->
       <div class="container"><!-- container start -->
         <div class="leftside-container">
@@ -70,6 +81,41 @@
           </div> -->
         </div>
         <div class="main"><!-- main start --> 
+          <div class="nav-tabs">
+            <ul>
+              <li class="contrib-tab">
+                <span class="octicon octicon-diff-added">&nbspContributions</span>
+              </li>
+              <li class="repos-tab">
+                <span class="octicon octicon-repo">&nbspRepositories</span>
+              </li>
+              <li class="public-tab">
+                <span class="octicon octicon-rss">&nbspPublic activity</span>
+              </li>
+              <li class="button">
+                <button type="button"><span class="octicon octicon-pencil"></span>&nbspEdit profile</button>
+              </li>
+            </ul>
+          </div>
+          <div class="main-second-level">
+            <ul>
+              <li>
+                <form class="search-form" action="search-form" methods="">
+                  <input class="search-field" name="search" placeholder=" Find a repository ...">
+                  <input class="search-button" type="submit" name="Search" value="Search">
+                </form>
+              </li>
+              <li>All</li>
+              <li>Public</li>
+              <li>Private</li>
+              <li>Sources</li>
+              <li>Forks</li>
+              <li>Mirrors</li>
+              <li class="new">
+                <button type="button"><span class="octicon octicon-repo"></span>&nbspNew</button>
+              </li>
+            </ul>
+          </div>
           <!-- <div class="repobox">
             <div class="repo-star-branch">
               <span class="octicon octicon-star">0</span>
